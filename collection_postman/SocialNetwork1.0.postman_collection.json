@@ -1,0 +1,347 @@
+{
+  "info": {
+    "_postman_id": "9a2d7972-7b4a-4edf-a797-6348a520bc78",
+    "name": "SocialNetwork1.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56137900"
+  },
+  "item": [
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"ruolo\": \"MODERATOR\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/utenti/2/ruolo",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "utenti",
+            "2",
+            "ruolo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"testo\": \"Post aggiornato!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts/2/likes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts",
+            "2",
+            "likes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"testo\": \"Post aggiornato!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts/1/likes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts",
+            "1",
+            "likes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"testo\": \"Post aggiornato!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"testo\": \"Il mio primo post!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtYXJpb19yb3NzaSIsImlhdCI6MTc4NzkyNjU4MSwiZXhwIjoxNzg4MDEyOTgxfQ.KWRNKYhdRmMJ2Ard1s2GAXiD7JzKD9GT8KzXqDxQ_RTtlqGlTUlbrXFDz7H7r3wq",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/posts",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"mario_rossi\",\r\n  \"password\": \"password123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"nuovo_utente\",\r\n  \"nomeCompleto\": \"Nuovo Utente\",\r\n  \"email\": \"nuovo@example.com\",\r\n  \"password\": \"password123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/auth/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

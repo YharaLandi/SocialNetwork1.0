@@ -9,6 +9,7 @@ import com.SocialNetwork.SocialNetwork.service.UtenteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,7 @@ public class LikeController {
     private final UtenteService utenteService;
 
     @PostMapping
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Like> addLike(@PathVariable Long postId,
                                         @AuthenticationPrincipal UserDetails principal) {
         Utente utente = utenteService.findByUsername(principal.getUsername());
@@ -31,6 +33,7 @@ public class LikeController {
     }
 
     @DeleteMapping
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Void> removeLike(@PathVariable Long postId,
                                            @AuthenticationPrincipal UserDetails principal) {
         Utente utente = utenteService.findByUsername(principal.getUsername());

@@ -10,6 +10,7 @@ import com.SocialNetwork.SocialNetwork.service.UtenteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
@@ -26,6 +27,7 @@ public class PostController {
     private final UtenteService utenteService;
 
     @PostMapping
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Post> create(@RequestBody CreatePostRequest request,
                                        @AuthenticationPrincipal UserDetails principal) {
         Utente autore = utenteService.findByUsername(principal.getUsername());
@@ -48,6 +50,7 @@ public class PostController {
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<Post> update(@PathVariable Long id,
                                        @RequestBody UpdatePostRequest request,
                                        @AuthenticationPrincipal UserDetails principal) {
